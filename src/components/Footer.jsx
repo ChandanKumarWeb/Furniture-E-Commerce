@@ -12,7 +12,7 @@ function Footer() {
             FL 33134 USA
           </p>
           <p className="copyright font-bold">
-            2023 furino. All rights reverved<br/> Developed by<a href="https://its-chandan-portfolio.netlify.app/">Chandan.Dev</a>
+            2023 furino. All rights reverved<br/> Developed by <a style={{color:"#898989"}} href="https://its-chandan-portfolio.netlify.app/">Chandan.Dev</a>
           </p>
         </div>
         <div className="columns-3xs flex flex-col content-center item-center gap-4">
