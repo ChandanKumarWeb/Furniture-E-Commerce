@@ -33,8 +33,8 @@ export default function NavbarDefault() {
         { to: "/contact", label: "CONTACT" },
         { to: "/blog", label: "BLOG" },
       ].map((link) => (
-        <li key={link.to} className="text-black font-medium">
-          <Link to={link.to} className="hover:text-gray-600">
+        <li key={link.to} className="text-black font-medium" >
+          <Link to={link.to} onClick={() => setOpenNav(false)} className="hover:text-gray-600">
             {link.label}
           </Link>
         </li>
@@ -45,7 +45,7 @@ export default function NavbarDefault() {
   const rightNavList = (
     <div className="flex items-center gap-x-6">
       {["add", "search", "wishlist"].map((icon, idx) => (
-        <button key={idx} className="text-black hover:text-gray-600">
+        <button key={idx} onClick={() => setOpenNav(false)} className="text-black hover:text-gray-600">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -153,7 +153,7 @@ export default function NavbarDefault() {
             />
           </button>
         </div>
-        <div className="h-2/3">
+        <div className="smallCartPdt">
           <Link to="/singleProduct">
             <Cartproduct
               Img={img1}

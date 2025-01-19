@@ -1,12 +1,12 @@
 function Features() {
   return (
     <div style={{backgroundColor:"#FAF3EA"}} className="w-full flex items-center justify-center my-5 py-5">
-      <div className="grid items-center justify-center grid-cols-4 gap-4 py-10 px-5">
+      <div className="grid items-center justify-center grid-cols-4 gap-4 py-10 px-2">
         <div className="col">
           <div className="flex justify-center items-center gap-2">
             <svg
-              width="60"
-              height="60"
+              width="50"
+              height="50"
               viewBox="0 0 60 60"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -25,8 +25,8 @@ function Features() {
         <div className="col">
           <div className="flex justify-center items-center gap-2">
             <svg
-              width="61"
-              height="60"
+              width="50"
+              height="50"
               viewBox="0 0 61 60"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -45,8 +45,8 @@ function Features() {
         <div className="col">
           <div className="flex justify-center items-center gap-2">
             <svg
-              width="61"
-              height="56"
+              width="50"
+              height="50"
               viewBox="0 0 61 56"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -65,8 +65,8 @@ function Features() {
         <div className="col">
           <div className="flex justify-center items-center ">
             <svg
-              width="54"
-              height="60"
+              width="50"
+              height="50"
               viewBox="0 0 54 60"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

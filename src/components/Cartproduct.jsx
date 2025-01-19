@@ -9,7 +9,7 @@ function Cartproduct(props) {
           <img className="cartImg" src={props.Img} alt=''/>
           <div className="flex flex-col">
             <h2 className="cartProNme" >{props.ProName}</h2>
-            <div className="cartProQnt flex justify-between items-center w-40">
+            <div className="cartProQnt flex justify-between items-center w-auto">
                 <p>{props.Quantity}</p>
                 <p>X</p>
                 <p style={{color:"#B88E2F"}}>{props.TotalPrc}</p>
