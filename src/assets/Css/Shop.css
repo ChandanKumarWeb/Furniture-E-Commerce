@@ -1,0 +1,267 @@
+:root {
+    --main-head-text-color: #b88e2f;
+    --main-subhead-text-color: #333333;
+    --font-style: Poppins, serif;
+    --rate-color: #9F9F9F;
+  }
+  body{
+    font-family: var(--font-style);
+  }
+  .shophomeimgSec{
+    position: relative;
+    height: 50vh;
+  }
+  .shophomeimg{
+    width: 100%;
+    height: 50vh;
+    opacity: 0.6;
+  }
+  .shopbannText{
+    position: absolute;
+    top: 50%;
+    left: 42%;
+  }
+  /* Toolbar */
+  /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #f8f2eb;
+  border: 1px solid #ddd;
+}
+
+/* Left Section */
+.toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-btn, .grid-view-btn, .list-view-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.results-info {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Right Section */
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+select {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+.pagesButton{
+  width: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #B88E2F;
+}
+.pagesButton:hover{
+  background-color: #fff;
+  color: #B88E2F;
+  transition: 0.5s;
+}
+/* Features */
+.featuresTitle{
+  font-size: 22px;
+  color: #242424;
+  /* font-family:var(--font-style); */
+  font-weight: 600;
+}
+.featuresAbout{
+  font-size: 18px;
+  color: #898989;
+}
+/* ProductRoute */
+.productRoute{
+  background-color: #F9F1E7;
+}
+/* Single product */
+.imgBgCol{
+  background-color: #F9F1E7;
+  border-radius: 15px;
+}
+.bigImg{
+  background-color: #F9F1E7;
+  border-radius: 15px;
+  width: 60vw;
+}
+.productDetailsProName{
+  font-weight: 400;
+  font-size: 40px;
+}
+.productDetailsProPrice{
+  font-size: 30px;
+  color: var(--rate-color);
+}
+.divider {
+  height: 30px;
+  width: 2px; 
+  background-color: #ccc;
+}
+.review-text {
+  white-space: nowrap; 
+  color: var(--rate-color);
+}
+.sizeBtn{
+  width: 40px;
+  height: 30px;
+  border-radius: 8px;
+  background-color: #F9F1E7;
+}
+.sizeBtn.selected{
+  background-color: #b88e2f;
+  border: solid #000;
+}
+.discriptionImg{
+  background-color: #F9F1E7;
+  width: 40%;
+}
+/* CheckOut */
+.radioContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: fit-content;
+}
+
+.radioButton {
+  display: flex;
+  align-items: center; /* Align radio button and label vertically */
+}
+
+input[type="radio"] {
+  margin-right: 8px; /* Add space between the radio button and the label */
+}
+
+.cardInput {
+  margin-top: 5px;
+  padding-left: 20px; /* Indent to align with the radio button */
+}
+
+.cardNumberField {
+  margin-top: 5px;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cashMessage {
+  margin-top: 15px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-left: 4px solid #007bff;
+}
+/* Blog */
+.BlogUplDetail{
+  color: #9F9F9F;
+  font-size: 15px;
+}
+.readMoreBtn{
+  border-bottom: 1px solid;
+  width: 100px;
+  font-weight: bold;
+}
+.recentPostImg{
+  height: 80px;
+  width: 80px;
+  border-radius: 15px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .toolbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .toolbar-left,
+  .toolbar-right {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .shopbannText{
+    top: 50%;
+    left: 40%;
+  }
+  /* Features */
+.featuresTitle{
+  font-size: 12px;
+}
+.featuresAbout{
+  font-size: 10px;
+}
+}
+
+@media (max-width: 480px) {
+  .toolbar-left,
+  .toolbar-right {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .shopbannText{
+    top: 50%;
+    left: 25%;
+  }
+  .sectionHead{
+    font-size: 25px;
+  }
+  .sectionPera {
+    font-size: 8px;
+  }
+  /* Product Card */
+  .disPrice {
+    font-size: 10px;
+  }
+  .orgPrice {
+    font-size: 8px;
+  }
+  .proImg{
+    height: 25vh;
+  }
+  .productInfo {
+    font-size: 8px;
+  }
+  .imgText {
+    font-size: 60%;
+    width: 30px;
+    height: 30px;
+  }
+    /* Features */
+.featuresTitle{
+  font-size: 8px;
+}
+.featuresAbout{
+  font-size: 5px;
+}
+}
