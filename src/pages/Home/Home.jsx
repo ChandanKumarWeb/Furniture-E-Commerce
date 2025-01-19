@@ -1,10 +1,5 @@
 import furniture from "../../assets/images/home-bg.webp";
 import "../../assets/Css/main.css";
-import Products from "./Products"; 
-import Browse from "./Browse";
-import Banner from "../../components/Banner";
-import Furniture from "./Furniture";
-import Fotter from "../../components/Footer"
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -26,11 +21,7 @@ const Home = () => {
         </Link>
       </div> 
     </div>
-    <Browse/>
-    <Products /> 
-    <Banner/>
-    <Furniture/>
-    <Fotter/>
+    
     </div>
   );
 };

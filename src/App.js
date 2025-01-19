@@ -11,6 +11,10 @@ import Contact from "./pages/Cart/Contact";
 import Features from "./pages/Shop/Features";
 import Blog from "./pages/Blog/Blog";
 import About from "./pages/Blog/About";
+import Browse from "./pages/Home/Browse";
+import Products from "./pages/Home/Products";
+import Banner from "./components/Banner";
+import Furniture from "./pages/Home/Furniture";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +22,11 @@ const router = createBrowserRouter([
     element: <div>
       <NavbarDefault />
       <Home />
-      {/* <Cart /> */}
+      <Browse/>
+      <Products/> 
+      <Banner/>
+      <Furniture/>
+      <Footer/>
     </div>
   },
   {
