@@ -175,12 +175,12 @@ export default function NavbarDefault() {
         </div>
         <div className="flex justify-between items-center p-2 ">
           <Link to="/cart">
-            <button onClick={toggleCart} className="w-28 h-10 text-center border-2 rounded-3xl ">
+            <button onClick={() => {toggleCart();setOpenNav(false);}} className="w-28 h-10 text-center border-2 rounded-3xl ">
               Cart
             </button>
           </Link>
           <Link to="/checkout">
-            <button onClick={toggleCart} className="w-28 h-10 text-center border-2 rounded-3xl ">
+            <button onClick={() => {toggleCart();setOpenNav(false);}} className="w-28 h-10 text-center border-2 rounded-3xl ">
               Checkout
             </button>
           </Link>
