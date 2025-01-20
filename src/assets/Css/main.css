@@ -382,6 +382,7 @@ body {
   /* fotter */
   .fotterAddress {
     font-size: 6px;
+    height: 10vh;
   }
   .fotterList li,
   .fotterList1 li {
@@ -428,6 +429,9 @@ body {
   }
 
   /* Fotter */
+  .fotter{
+    height: 35vh;
+  }
   .fotterList li,
   .fotterList1 li {
     font-size: 8px;

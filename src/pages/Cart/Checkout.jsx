@@ -1,18 +1,19 @@
 import React from "react";
 import { ChevronDownIcon } from "@heroicons/react/16/solid";
 import RadioButtons from "../../components/RadioButtons";
+
 function Checkout() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-5  mt-5 w-100">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-5 mt-5 w-100">
       <div className="flex flex-col justify-center items-center mx-5 p-5 md:order-first">
         <h1 className="text-2xl font-semibold">Billing details</h1>
         <div>
-          {/* Foam */}
-          <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8">
-            <div className="sm:col-span-3">
+          {/* Form */}
+          <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2">
+            <div className="col-span-6 sm:col-span-1">
               <label
                 htmlFor="first-name"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm font-medium text-gray-900"
               >
                 First name
               </label>
@@ -22,15 +23,14 @@ function Checkout() {
                   name="first-name"
                   type="text"
                   autoComplete="given-name"
-                  className="block w-50 rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm"
                 />
               </div>
             </div>
-
-            <div className="sm:col-span-3">
+            <div className="col-span-6 sm:col-span-1">
               <label
                 htmlFor="last-name"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm font-medium text-gray-900"
               >
                 Last name
               </label>
@@ -40,15 +40,15 @@ function Checkout() {
                   name="last-name"
                   type="text"
                   autoComplete="family-name"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm"
                 />
               </div>
             </div>
-
+            {/* Other fields */}
             <div className="col-span-6">
               <label
                 htmlFor="company-name"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm font-medium text-gray-900"
               >
                 Company Name (Optional)
               </label>
@@ -58,7 +58,7 @@ function Checkout() {
                   name="company-name"
                   type="text"
                   autoComplete="company-name"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm"
                 />
               </div>
             </div>
@@ -66,7 +66,7 @@ function Checkout() {
             <div className="col-span-6">
               <label
                 htmlFor="country"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm font-medium text-gray-900"
               >
                 Country
               </label>
@@ -75,7 +75,7 @@ function Checkout() {
                   id="country"
                   name="country"
                   autoComplete="country-name"
-                  className=" col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6 "
+                  className=" col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm "
                 >
                   <option>United States</option>
                   <option>Canada</option>
@@ -89,10 +89,11 @@ function Checkout() {
               </div>
             </div>
 
+            {/* Additional address fields */}
             <div className="col-span-6">
               <label
                 htmlFor="street-address"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm font-medium text-gray-900"
               >
                 Street address
               </label>
@@ -102,7 +103,7 @@ function Checkout() {
                   name="street-address"
                   type="text"
                   autoComplete="street-address"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm"
                 />
               </div>
             </div>
@@ -110,7 +111,7 @@ function Checkout() {
             <div className="col-span-6">
               <label
                 htmlFor="city"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm font-medium text-gray-900"
               >
                 Town / City
               </label>
@@ -120,7 +121,7 @@ function Checkout() {
                   name="city"
                   type="text"
                   autoComplete="address-level2"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm"
                 />
               </div>
             </div>
@@ -128,7 +129,7 @@ function Checkout() {
             <div className="col-span-6">
               <label
                 htmlFor="region"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm font-medium text-gray-900"
               >
                 Province
               </label>
@@ -138,7 +139,7 @@ function Checkout() {
                   name="region"
                   type="text"
                   autoComplete="address-level1"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm"
                 />
               </div>
             </div>
@@ -146,7 +147,7 @@ function Checkout() {
             <div className="col-span-6">
               <label
                 htmlFor="postal-code"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm font-medium text-gray-900"
               >
                 ZIP / Postal code
               </label>
@@ -156,7 +157,7 @@ function Checkout() {
                   name="postal-code"
                   type="text"
                   autoComplete="postal-code"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm"
                 />
               </div>
             </div>
@@ -164,7 +165,7 @@ function Checkout() {
             <div className="col-span-6">
               <label
                 htmlFor="email"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm font-medium text-gray-900"
               >
                 Email address
               </label>
@@ -174,7 +175,7 @@ function Checkout() {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm"
                 />
               </div>
             </div>
@@ -182,7 +183,7 @@ function Checkout() {
             <div className="col-span-6">
               <label
                 htmlFor="ph-no"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm font-medium text-gray-900"
               >
                 Phone Number
               </label>
@@ -192,7 +193,7 @@ function Checkout() {
                   name="ph-no"
                   type="text"
                   autoComplete="number"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm"
                 />
               </div>
             </div>
@@ -201,7 +202,7 @@ function Checkout() {
       </div>
       {/* Right Side */}
       <div className="flex justify-center">
-        <div className="m-8 w-4/6 ">
+        <div className="m-2 w-full  md:m-8 lg:w-4/6  ">
           <div className="flex justify-between text-xl font-medium ">
             <h1>Product</h1>
             <h1>Subtotal</h1>

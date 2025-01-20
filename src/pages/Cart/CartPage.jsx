@@ -2,6 +2,7 @@ import img1 from "../../assets/images/SingleProductImg/image1.webp";
 import Features from "../Shop/Features";
 import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
+
 function CartPage() {
   const bin = (
     <svg
@@ -17,58 +18,63 @@ function CartPage() {
       />
     </svg>
   );
+
   return (
     <div>
-      {/* Table */}
-      <div className="flex justify-center my-8 gap-4 w-full">
-        <table className="table-auto w-3/4 gap-4 text-center ">
-          <thead className="h-12" style={{ backgroundColor: "#F9F1E7" }}>
-            <tr>
-              <th></th>
-              <th>Product</th>
-              <th>Price</th>
-              <th>Quantity</th>
-              <th>Subtotal</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody className="border-separate border-spacing-2">
-            <tr>
-              <td>
-                <img className="cartImg mt-5" src={img1} alt="" />
-              </td>
-              <td> Asgaard sofa</td>
-              <td>Rs. 250,000.00</td>
-              <td>1</td>
-              <td>Rs. 250,000.00</td>
-              <td>{bin}</td>
-            </tr>
-            <tr>
-              <td>
-                <img className="cartImg mt-5" src={img1} alt=""/>
-              </td>
-              <td> Asgaard sofa</td>
-              <td>Rs. 250,000.00</td>
-              <td>1</td>
-              <td>Rs. 250,000.00</td>
-              <td>{bin}</td>
-            </tr>
-          </tbody>
-        </table>
+      {/* Table and Cart Totals using Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-8 w-full">
+        <div className="md:col-span-2">
+          <table className="table-auto w-full gap-4 text-center">
+            <thead className="h-12" style={{ backgroundColor: "#F9F1E7" }}>
+              <tr>
+                <th className="cartPageProductTblHead"></th>
+                <th className="cartPageProductTblHead">Product</th>
+                <th className="cartPageProductTblHead">Price</th>
+                <th className="cartPageProductTblHead">Quantity</th>
+                <th className="cartPageProductTblHead">Subtotal</th>
+                <th className="cartPageProductTblHead"></th>
+              </tr>
+            </thead>
+            <tbody className="border-separate border-spacing-2">
+              <tr>
+                <td>
+                  <img className="cartImg mt-5" src={img1} alt="" />
+                </td>
+                <td className="cartPageProductDtls">Asgaard sofa</td>
+                <td className="cartPageProductDtls">Rs. 250,000.00</td>
+                <td className="cartPageProductDtls">1</td>
+                <td className="cartPageProductDtls">Rs. 250,000.00</td>
+                <td className="cartPageProductDtls">{bin}</td>
+              </tr>
+              <tr>
+                <td>
+                  <img className="cartImg mt-5" src={img1} alt="" />
+                </td>
+                <td className="cartPageProductDtls">Asgaard sofa</td>
+                <td className="cartPageProductDtls">Rs. 250,000.00</td>
+                <td className="cartPageProductDtls">1</td>
+                <td className="cartPageProductDtls">Rs. 250,000.00</td>
+                <td className="cartPageProductDtls">{bin}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         {/* CART TOTAL */}
-        <div
-          className="w-1/4 h-72 px-2 "
+        <div className="flex flex-col items-center w-full">
+          <div
+          className="flex flex-col items-center  w-2/3 h-72 px-2"
           style={{ backgroundColor: "#F9F1E7" }}
         >
           <div className="py-4 h-24">
             <h1 className="text-2xl text-center">Cart Totals</h1>
           </div>
-          <div className="flex flex-col justify-center  gap-4">
-            <div className="flex justify-evenly">
+          <div className="flex flex-col justify-center gap-4">
+            <div className="flex gap-4 justify-between">
               <h1>Subtotal</h1>
               <h1>Rs. 250,000.00</h1>
             </div>
-            <div className="flex justify-evenly">
+            <div className="flex justify-between gap-4">
               <h1>Total</h1>
               <h1 className="text-xl" style={{ color: "#B88E2F" }}>
                 Rs. 250,000.00
@@ -82,8 +88,10 @@ function CartPage() {
               </Link>
             </div>
           </div>
+          </div>
         </div>
       </div>
+
       <Features />
       <Footer />
     </div>

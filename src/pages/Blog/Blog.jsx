@@ -9,14 +9,13 @@ import SmlImg2 from "../../assets/images/Blog-img/blogSmlimg2.webp";
 import SmlImg3 from "../../assets/images/Blog-img/blogSmlimg3.webp";
 import SmlImg4 from "../../assets/images/Blog-img/blogSmlimg4.webp";
 import SmlImg5 from "../../assets/images/Blog-img/blogSmlimg5.webp";
-
 import BlogLftCont from "./BlogLftCont";
 import SeeMorebtn from "../../components/SeeMorebtn";
 import BlogRecentPostsCrd from "../../components/BlogRecentPostsCrd";
 function Blog() {
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-10 mx-14 mt-14 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-10 mx-2 sm:mx-14 mt-14 gap-4">
         {/* left Column */}
         <div className="col-span-7 order-last md:order-first">
           <BlogLftCont
@@ -79,7 +78,7 @@ function Blog() {
           </div>
           {/* Categories */}
           <div className="flex justify-center items-center ">
-            <div className="flex flex-col w-64 px-5 py-4 gap-6">
+            <div className="flex flex-col w-72 py-4 gap-6">
               <h1 className="text-xl">Categories</h1>
               <div style={{ color: "#9F9F9F" }} className="flex flex-col gap-6">
                 <div className="flex justify-between items-center">
@@ -107,7 +106,7 @@ function Blog() {
           </div>
           {/* Recent Posts */}
           <div className="flex flex-col justify-center items-center mt-6 px-4">
-            <div className="w-64">
+            <div className="lg:w-68 xl:w-72">
               <h1 className="text-xl pb-4"> Recent Posts</h1>
               <div className="flex flex-col gap-6">
                 <BlogRecentPostsCrd img={SmlImg1} post="Going all-in with millennial design" date="03 Aug 2022"/>

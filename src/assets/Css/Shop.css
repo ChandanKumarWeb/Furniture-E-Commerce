@@ -213,6 +213,13 @@ input[type="radio"] {
     top: 50%;
     left: 40%;
   }
+  /* cartPage */
+  .cartPageProductTblHead{
+    font-size: 16px;
+  }
+  .cartPageProductDtls{
+    font-size: 12px;
+  }
   /* Features */
 .featuresTitle{
   font-size: 12px;
@@ -257,6 +264,15 @@ input[type="radio"] {
     width: 30px;
     height: 30px;
   }
+  /* cartPage */
+  .cartPageProductTblHead{
+    font-size: 10px;
+  }
+  .cartPageProductDtls{
+    font-size: 8px;
+  }
+
+
     /* Features */
 .featuresTitle{
   font-size: 7px;
