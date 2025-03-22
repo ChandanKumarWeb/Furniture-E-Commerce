@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
     
 function ProductBox(props) {
   return (
@@ -7,9 +8,11 @@ function ProductBox(props) {
           <img className="proImg" src={props.images} alt="" />
           <span className="imgText">{props.dis}</span>
           <div className="card__content bg-black/60">
-          <button className="opacity-80 card__title" href="">
-            Add To Cart
-          </button>
+          <Link to="/cart">
+            <button className="opacity-80 card__title rounded-lg hover:bg-sky-700 hover:text-white" href="">
+              Add To Cart
+            </button>
+          </Link>
         </div>
         </div>
         <div className="aboutProduct ">

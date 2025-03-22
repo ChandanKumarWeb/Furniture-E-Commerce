@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ProductBox from "./ProductBox";
 import Img1 from "./../../assets/images/Products-img/img1.webp";
 import Img2 from "./../../assets/images/Products-img/img2.webp";
@@ -30,6 +30,7 @@ function Products() {
 
       <div className="grid grid-cols-2 gap-4 md:grid-cols-4 place-content-center content-center p-9">
         {products.map((product) => (
+          <Link to="/singleProduct">
           <ProductBox
             key={product.id}
             images={product.image}
@@ -39,11 +40,12 @@ function Products() {
             disprice={product.price}
             orgprice={product.originalPrice}
           />
+          </Link>
         ))}
       </div>
 
       <div className="flex place-content-center content-center">
-        <button type="button" className="seemorebtn">Show More</button>
+        <Link to="/shop"><button type="button" className="seemorebtn">Show More</button></Link>
       </div>
     </div>
   );
